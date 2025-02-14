@@ -11,6 +11,8 @@ def hello_world():
               <p>Pour accéder à vos exercices cliquez <a href='./exercices/'>Ici</a></p>
               <p>Pour accéder à la page de contact cliquez <a href='./contact/'>Ici</a></p>
               <p>Pour accéder à la page du carré cliquez <a href='./calcul_carre/'>Ici</a></p>"""
+                <p>Pour accéder à la page somme cliquez <a href='./somme/'>Ici</a></p>"""
+
 
   
 @app.route('/exercices/')
