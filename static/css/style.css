@@ -1,1 +1,99 @@
+/* Reset des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Titre */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Texte informatif */
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+}
+
+/* Champs de formulaire */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+/* Lien retour */
+.back-home a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.back-home a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
 
