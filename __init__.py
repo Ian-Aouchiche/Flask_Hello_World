@@ -7,7 +7,9 @@ app = Flask(__name__)
                                                                                                                                        
 @app.route('/')
 def hello_world():
-    return "<h2>Bonjour tout le monde !</h2><p>Pour accéderclkz,cioz,oi,z à vos exerices cliquez <a href='./exercices/'>Ici</a></p>"
+    return "<h2>Bonjour tout le monde !</h2><p>Pour accéder vos exerices cliquez <a href='./exercices/'>Ici</a></p>"
+      return "<h2>Bonjour tout le monde !</h2><p>Pour accéder vos contacts cliquez <a href='./contact/'>Ici</a></p>"
+
 
 @app.route('/exercices/')
 def exercices():
@@ -15,7 +17,7 @@ def exercices():
   
 @app.route("/contact/")
 def MaPremiereAPI():
-    return "<h2>Ma page de contact</h2><p>Pour accéder à vos contacts cliquez <a href='./contact/'>Ici</a></p>"
+    return "<h2>Ma page de contact</h2>
   
                                                                 
 if __name__ == "__main__":
