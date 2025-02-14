@@ -11,7 +11,9 @@ def hello_world():
               <p>Pour accéder à vos exercices cliquez <a href='./exercices/'>Ici</a></p>
               <p>Pour accéder à la page de contact cliquez <a href='./contact/'>Ici</a></p>
               <p>Pour accéder à la page du carré cliquez <a href='./calcul_carre/'>Ici</a></p>
-              <p>Pour accéder à la page somme cliquez <a href='./somme/'>Ici</a></p>"""
+              <p>Pour accéder à la page somme cliquez <a href='./somme/'>Ici</a></p>
+              <p>Pour accéder à la page somme de tout cliquez <a href='./sommedetout/'>Ici</a></p>"""
+
 
 
   
@@ -32,6 +34,16 @@ def somme(valeur1, valeur2):
     resultat = valeur1 + valeur2
     parite = "pair" if resultat % 2 == 0 else "impair"
     return f"<h2>La somme des valeurs est : {resultat}</h2><p> nombre est {parite}.</p>"
+
+@app.route('/sommedetout/<path:valeurs>')
+def somme_de_tout(valeurs):
+    liste_valeurs = list(map(int, valeurs.split('/')))
+    
+    resultat = sum(liste_valeurs)
+    
+    valeurs_str = " + ".join(map(str, liste_valeurs))  
+    return f"<h2>La somme de {valeurs_str} est : {resultat}</h2>"
+
 
 
 
