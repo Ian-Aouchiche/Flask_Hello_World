@@ -13,7 +13,9 @@ def hello_world():
               <p>Pour accéder à la page du carré cliquez <a href='./calcul_carre/'>Ici</a></p>
               <p>Pour accéder à la page somme cliquez <a href='./somme/'>Ici</a></p>
               <p>Pour accéder à la page somme de tout cliquez <a href='./sommedetout/'>Ici</a></p>
-              <p>Pour accéder à la page max de tout cliquez <a href='./max/'>Ici</a></p>"""
+              <p>Pour accéder à la page max de tout cliquez <a href='./max/'>Ici</a></p>
+              <p>Pour accéder à la page du cnam cliquez <a href='./cnam/'>Ici</a></p>"""
+
 
 
 
@@ -58,6 +60,12 @@ def valeur_max(valeurs):
             max_valeur = nombre  
 
     return f"<h2>La valeur maximale est : {max_valeur}</h2>"
+
+@app.route('/cnam')
+def afficher_cnam():
+    return render_template('cnam.html')  
+
+
 
 
 
