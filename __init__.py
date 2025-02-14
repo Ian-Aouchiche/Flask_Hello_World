@@ -12,7 +12,7 @@ def hello_world():
               <p>Pour accéder à la page de contact cliquez <a href='./contact/'>Ici</a></p>
               <p>Pour accéder à la page du carré cliquez <a href='./calcul_carre/'>Ici</a></p>
               <p>Pour accéder à la page somme cliquez <a href='./somme/'>Ici</a></p>
-              <p>Pour accéder à la page somme de tout cliquez <a href='./sommedetout/'>Ici</a></p>"""
+              <p>Pour accéder à la page somme de tout cliquez <a href='./sommedetout/'>Ici</a></p>
               <p>Pour accéder à la page max de tout cliquez <a href='./max/'>Ici</a></p>"""
 
 
