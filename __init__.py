@@ -15,7 +15,7 @@ def exercices():
   
 @app.route("/contact/")
 def MaPremiereAPI():
-    return "<h2>Ma page de contact</h2>"
+    return "<h2>Ma page de contact</h2><p>Pour accéder à vos contacts cliquez <a href='./contact/'>Ici</a></p>"
   
                                                                 
 if __name__ == "__main__":
