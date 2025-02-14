@@ -13,6 +13,8 @@ def hello_world():
               <p>Pour accéder à la page du carré cliquez <a href='./calcul_carre/'>Ici</a></p>
               <p>Pour accéder à la page somme cliquez <a href='./somme/'>Ici</a></p>
               <p>Pour accéder à la page somme de tout cliquez <a href='./sommedetout/'>Ici</a></p>"""
+              <p>Pour accéder à la page max de tout cliquez <a href='./max/'>Ici</a></p>"""
+
 
 
 
@@ -43,6 +45,20 @@ def somme_de_tout(valeurs):
     
     valeurs_str = " + ".join(map(str, liste_valeurs))  
     return f"<h2>La somme de {valeurs_str} est : {resultat}</h2>"
+
+@app.route('/max/<path:valeurs>')
+def valeur_max(valeurs):
+    liste_valeurs = []
+    for valeur in valeurs.split('/'):  
+        liste_valeurs.append(int(valeur))  
+
+    max_valeur = liste_valeurs[0]  
+    for nombre in liste_valeurs:
+        if nombre > max_valeur:
+            max_valeur = nombre  
+
+    return f"<h2>La valeur maximale est : {max_valeur}</h2>"
+
 
 
 
