@@ -7,17 +7,15 @@ app = Flask(__name__)
                                                                                                                                        
 @app.route('/')
 def hello_world():
-    return "<h2>Bonjour tout le monde !</h2><p>Pour accéder vos exerices cliquez <a href='./exercices/'>Ici</a></p>      
-
+    return "<h2>Bonjour tout le monde !</h2><p>Pour accéder à vos exercices cliquez <a href='./exercices/'>Ici</a></p>"
 
 @app.route('/exercices/')
 def exercices():
-    return render_template('exercices.html') #Comm2
-  
+    return render_template('exercices.html')  # Assure-toi que ce fichier existe dans "templates/"
+
 @app.route("/contact/")
 def MaPremiereAPI():
-    return "<h2>Ma page de contact</h2>
-  
-                                                                
+    return "<h2>Ma page de contact</h2>"
+
 if __name__ == "__main__":
-  app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
