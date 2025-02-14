@@ -9,7 +9,9 @@ app = Flask(__name__)
 def hello_world():
     return """<h2>Bonjour tout le monde !</h2>
               <p>Pour accéder à vos exercices cliquez <a href='./exercices/'>Ici</a></p>
-              <p>Pour accéder à la page de contact cliquez <a href='./contact/'>Ici</a></p>"""
+              <p>Pour accéder à la page de contact cliquez <a href='./contact/'>Ici</a></p>
+              <p>Pour accéder à la page du carré cliquez <a href='./calcul_carre/'>Ici</a></p>"""
+
   
 @app.route('/exercices/')
 def exercices():
