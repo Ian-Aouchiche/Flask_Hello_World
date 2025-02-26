@@ -1,43 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresseur de Pokémon</title>
 </head>
 <body>
-<h1>Mon formulaire</h1>
+    <h1>Dresseur de Pokémon</h1>
+    <p>Les champs marqués d'une * sont obligatoires.</p>
 
-<form action="#">
-<fieldset>
-<legend>Votre Nom et Prénom</legend>
-<p>Nom : <input name="A" type="Text" value="Nom ?"/></p>
-<p>Prénom : <input name="B" type="Text" value="Prénom ?"/></p>
-</fieldset>
-<p>Mr <input name="C" type="radio" value="Mr"/> 
-Mme<input name="C" type="radio" value="Mme"/></p>
-<p>
-Chien <input name="D" type="checkbox" value="Chien"/>
-Chat <input name="E" type="checkbox" value="Chat"/>
-Poisson <input name="F" type="checkbox" value="Poisson"/>
-</p>
-<p>
-<select name="G" multiple>
-<option>Pain</option>
-<option>Citron</option>
-<option>Orange</option>
-</select>
-</p>
-<p>
-<textarea rows="3" cols="30" name="H">
-Laisez nous un commentaire
-</textarea>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Nouveau dresseur</legend>
 
-</p>
-<p><input type="submit" value="Envoyer" />
-<input type="reset"/>
-</p>
+            <p>Nom * : <input type="text" name="nom" required></p>
 
+            <p>Description :</p>
+            <textarea name="description" rows="3" cols="30"></textarea>
 
-</form>
+            <p>Équipe :</p>
+            <input type="radio" name="equipe" value="Rouge"> Rouge <br>
+            <input type="radio" name="equipe" value="Jaune"> Jaune <br>
+            <input type="radio" name="equipe" value="Bleu"> Bleu <br>
 
+            <p>Anniversaire * :</p>
+            <input type="date" name="anniversaire" required>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+    </form>
 </body>
 </html>
