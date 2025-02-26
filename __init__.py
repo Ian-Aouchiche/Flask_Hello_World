@@ -70,7 +70,7 @@ def afficher_cnam():
 
 @app.route('/exercice_base1')
 def exercice_base1():
-    return render_template('exercice_base1.html') 
+    return render_template('1_Liste_Base.html') 
 
 
 
