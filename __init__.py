@@ -15,7 +15,9 @@ def hello_world():
               <p>Pour accéder à la page somme de tout cliquez <a href='./sommedetout/'>Ici</a></p>
               <p>Pour accéder à la page max de tout cliquez <a href='./max/'>Ici</a></p>
               <p>Pour accéder à la page du cnam cliquez <a href='./cnam/'>Ici</a></p>
-              <p>Pour accéder à la page exercice cliquez <a href='./exercice_base1/'>Ici</a></p>"""
+              <p>Pour accéder à la page exercice1 cliquez <a href='./exercice_base1/'>Ici</a></p>
+              <p>Pour accéder à la page exercice2 cliquez <a href='./exercice_base2/'>Ici</a></p>"""
+
 
 
 
@@ -71,6 +73,10 @@ def afficher_cnam():
 @app.route('/exercice_base1/')
 def exercice_base1():
     return render_template('1_Liste_Base.html') 
+  
+@app.route('/exercice_base2/')
+def exercice_base1():
+    return render_template('exercice_base2.html') 
 
 
 
