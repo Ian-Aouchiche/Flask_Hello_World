@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableaux et Listes</title>
+    <title>Tableaux</title>
     <style>
         table {
-            width: 100%;
             border-collapse: collapse;
+            width: 100%;
         }
         th, td {
             border: 1px solid black;
-            padding: 8px;
+            padding: 10px;
             text-align: center;
-        }
-        i {
-            font-style: italic;
-        }
-        .red {
-            color: red;
-            font-weight: bold;
         }
         .bold {
             font-weight: bold;
@@ -28,6 +21,7 @@
 </head>
 <body>
 
+    <!-- Premier Tableau -->
     <table>
         <tr>
             <td colspan="2">un tableau</td>
@@ -36,41 +30,48 @@
         </tr>
     </table>
 
-    <br>
+    <br><br>
+
 
     <h3><i>Voici la deuxième partie</i></h3>
 
-    <p class="red">Une liste</p>
+<p class="red">Une liste</p>
 
-    <ol>
-        <li>premier point
-            <ul>
-                <li>rubrique 1</li>
-                <li>rubrique 2</li>
-            </ul>
-        </li>
-        <li>2e point</li>
-        <li>3e point
-            <ul>
-                <li>rubrique 1</li>
-                <li>rubrique 2</li>
-            </ul>
-        </li>
-    </ol>
+<ol>
+    <li>premier point
+        <ul>
+            <li>rubrique 1</li>
+            <li>rubrique 2</li>
+        </ul>
+    </li>
+    <li>2e point</li>
+    <li>3e point
+        <ul>
+            <li>rubrique 1</li>
+            <li>rubrique 2</li>
+        </ul>
+    </li>
+</ol>
 
-    <br>
+<br>
 
-    <h3 class="bold">Voici la troisième partie :</h3>
 
+    <!-- Deuxième Tableau -->
     <table>
         <tr>
-            <td colspan="3">un autre tableau</td>
+            <td colspan="4" class="bold">un autre tableau</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
+            <td rowspan="2"></td>
+            <td rowspan="2">
+                <table width="100%">
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+            </td>
+            <td rowspan="2"></td>
             <td>
-                <table>
+                <table width="100%">
                     <tr>
                         <td></td>
                         <td></td>
@@ -82,3 +83,7 @@
 
 </body>
 </html>
+
+
+
+
