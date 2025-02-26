@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux et Listes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        i {
+            font-style: italic;
+        }
+        .red {
+            color: red;
+            font-weight: bold;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2">un tableau</td>
+            <td colspan="2">à 6</td>
+            <td colspan="2"><b>cases</b></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h3><i>Voici la deuxième partie</i></h3>
+
+    <p class="red">Une liste</p>
+
+    <ol>
+        <li>premier point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+        <li>2e point</li>
+        <li>3e point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+    </ol>
+
+    <br>
+
+    <h3 class="bold">Voici la troisième partie :</h3>
+
+    <table>
+        <tr>
+            <td colspan="3">un autre tableau</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
