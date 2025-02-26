@@ -18,7 +18,9 @@ def hello_world():
               <p>Pour accéder à la page exercice1 cliquez <a href='./exercice_base1/'>Ici</a></p>
               <p>Pour accéder à la page exercice2 cliquez <a href='./exercice_base2/'>Ici</a></p>
               <p>Pour accéder à la page exercice3 cliquez <a href='./exercice_base3/'>Ici</a></p>
-              <p>Pour accéder au formulaire cliquez <a href='./formulaire/'>Ici</a></p>"""
+              <p>Pour accéder au formulaire cliquez <a href='./formulaire/'>Ici</a></p>
+              <p>Pour accéder a page1 cliquez <a href='./page1/'>Ici</a></p>"""
+
 
 
 
@@ -90,6 +92,10 @@ def exercice_base3():
 @app.route('/formulaire/')
 def formulaire():
     return render_template('formulaire.html') 
+
+@app.route('/page1/')
+def page1():
+    return render_template('page1.html') 
 
 
 
