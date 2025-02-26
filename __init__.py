@@ -19,7 +19,7 @@ def hello_world():
               <p>Pour accéder à la page exercice2 cliquez <a href='./exercice_base2/'>Ici</a></p>
               <p>Pour accéder à la page exercice3 cliquez <a href='./exercice_base3/'>Ici</a></p>
               <p>Pour accéder au formulaire cliquez <a href='./formulaire/'>Ici</a></p>
-              <p><a href='/actualite'>Lien vers l'actualité</a></p>
+              <p><a href='/actualite/'>Lien vers l'actualité</a></p>
               <p>Pour accéder a page1 cliquez <a href='./page1/'>Ici</a></p>"""
 
 
