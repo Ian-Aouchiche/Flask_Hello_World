@@ -7,14 +7,21 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 50%;
+            table-layout: fixed; 
         }
         th, td {
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+            width: 25%;
+            word-wrap: break-word;
         }
         .bold {
+            font-weight: bold;
+        }
+        .red {
+            color: red;
             font-weight: bold;
         }
     </style>
@@ -38,31 +45,29 @@
 
     <br><br>
 
-
     <h3><i>Voici la deuxième partie:</i></h3>
 
-<p class="red">Une liste</p>
+    <p class="red">Une liste</p>
 
-<ol>
-    <li>premier point
-        <ul>
-            <li>rubrique 1</li>
-            <li>rubrique 2</li>
-        </ul>
-    </li>
-    <li>2e point</li>
-    <li>3e point
-        <ul>
-            <li>rubrique 1</li>
-            <li>rubrique 2</li>
-        </ul>
-    </li>
-</ol>
+    <ol>
+        <li>premier point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+        <li>2e point</li>
+        <li>3e point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+    </ol>
 
-<br>
+    <br>
 
-
-<h3><i>Voici la troisième partie:</i></h3>
+    <h3><i>Voici la troisième partie:</i></h3>
 
     <table>
         <tr>
@@ -74,23 +79,18 @@
         <tr>
             <td rowspan="2"></td>
             <td rowspan="2">
-                
                 <table width="100%">
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-                    <tr><td></td></tr>
-
+                    <tr><td style="width: 100%;"></td></tr>
+                    <tr><td style="width: 100%;"></td></tr>
+                    <tr><td style="width: 100%;"></td></tr>
                 </table>
             </td>
             <td rowspan="2"></td>
             <td>
                 <table width="100%">
                     <tr>
-                        <td></td>
-                        <td></td>
-
-                    
-
+                        <td style="width:  100%;"></td>
+                        <td style="width:  100%;"></td>
                     </tr>
                 </table>
             </td>
@@ -99,7 +99,3 @@
 
 </body>
 </html>
-
-
-
-
