@@ -75,7 +75,7 @@ def exercice_base1():
     return render_template('1_Liste_Base.html') 
   
 @app.route('/exercice_base2/')
-def exercice_base1():
+def exercice_base2():
     return render_template('exercice_base2.html') 
 
 
