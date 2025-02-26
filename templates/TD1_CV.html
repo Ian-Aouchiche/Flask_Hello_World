@@ -7,7 +7,8 @@
 </head>
 <body>
 
-    <table border="0" width="80%">
+    <!-- Informations personnelles -->
+    <table border="1" width="80%">
         <tr>
             <td width="20%" rowspan="4">
                 <img src="{{ url_for('static', filename='photo.png') }}" alt="Ian Aouchiche" width="120" height="120">
@@ -24,8 +25,9 @@
 
     <br>
 
+    <!-- Informations de contact -->
     <h2>Informations de contact</h2>
-    <table border="0" width="80%">
+    <table border="1" width="80%">
         <tr><td><strong>Mobilité :</strong></td><td>Île-de-France</td></tr>
         <tr><td><strong>Téléphone :</strong></td><td>06.38.12.10.85</td></tr>
         <tr><td><strong>Email :</strong></td><td><a href="mailto:ian.aouchiche4@gmail.com">ian.aouchiche4@gmail.com</a></td></tr>
@@ -36,9 +38,9 @@
 
     <br>
 
-    <!-- Compétences -->
+    <!-- Compétences Informatiques -->
     <h2>Compétences Informatiques</h2>
-    <table border="0" width="80%">
+    <table border="1" width="80%">
         <tr><td><strong>Langages Web :</strong></td><td>HTML/CSS</td></tr>
         <tr><td><strong>Langages :</strong></td><td>PHP, Java, JavaScript</td></tr>
         <tr><td><strong>Frameworks :</strong></td><td>CodeIgniter 4, Bootstrap, Symfony</td></tr>
@@ -52,17 +54,21 @@
 
     <!-- Formation -->
     <h2>Formation</h2>
-    <table border="0" width="80%">
+    <table border="1" width="80%">
         <tr>
-            <td width="20%"><ul><li>2024-2025</li></ul></td>
+            <th width="20%">Année</th>
+            <th>Diplôme & Établissement</th>
+        </tr>
+        <tr>
+            <td>2024-2025</td>
             <td>Licence Informatique Générale - CNAM Nanterre</td>
         </tr>
         <tr>
-            <td><ul><li>2022-2024</li></ul></td>
+            <td>2022-2024</td>
             <td>BTS SIO SLAM - Lycée René Descartes, Champs-sur-Marne</td>
         </tr>
         <tr>
-            <td><ul><li>2019-2021</li></ul></td>
+            <td>2019-2021</td>
             <td>BAC STI2D (Option SIN) - Lycée Évariste Galois (Mention Assez Bien)</td>
         </tr>
     </table>
@@ -71,22 +77,26 @@
 
     <!-- Expérience Professionnelle -->
     <h2>Expériences Professionnelles</h2>
-    <table border="0" width="80%">
+    <table border="1" width="80%">
         <tr>
-            <td width="20%"><ul><li>2024</li></ul></td>
+            <th width="20%">Année</th>
+            <th>Poste & Entreprise</th>
+        </tr>
+        <tr>
+            <td>2024</td>
             <td><strong>Développeur Web - Hôpitaux de Saint-Maurice (Stage)</strong><br>
                 - Intégration d’une application web : gestion des stocks.<br>
                 - Développement front-end et back-end.<br>
                 - Technologies : HTML/CSS, Bootstrap, MySQL, PHP</td>
         </tr>
         <tr>
-            <td><ul><li>2023</li></ul></td>
+            <td>2023</td>
             <td><strong>Développeur Web - Hôpitaux de Saint-Maurice (Stage)</strong><br>
                 - Intégration d’une application de prise de rendez-vous / gestion des employés.<br>
                 - Développement en HTML/CSS, Bootstrap, MySQL, JavaScript, PHP.</td>
         </tr>
         <tr>
-            <td><ul><li>2021-2023</li></ul></td>
+            <td>2021-2023</td>
             <td><strong>Employé libre-service & Accueil Clientèle - Super U</strong></td>
         </tr>
     </table>
@@ -95,15 +105,19 @@
 
     <!-- Projets Web -->
     <h2>Projets Web</h2>
-    <table border="0" width="80%">
+    <table border="1" width="80%">
         <tr>
-            <td width="20%"><ul><li>Réservation Hôtel</li></ul></td>
+            <th width="20%">Projet</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Réservation Hôtel</td>
             <td>Front-end : HTML/CSS & Bootstrap, JavaScript<br>
                 Back-end : PHP<br>
                 Base de données : MySQL</td>
         </tr>
         <tr>
-            <td><ul><li>Gestion d'Employés</li></ul></td>
+            <td>Gestion d'Employés</td>
             <td>Front-end : HTML/CSS<br>
                 Back-end : PHP (CodeIgniter 4)<br>
                 Base de données : MySQL</td>
@@ -114,24 +128,35 @@
 
     <!-- Soft Skills -->
     <h2>Soft Skills</h2>
-    <ul>
-        <li>Prise de décision</li>
-        <li>Travail en équipe</li>
-        <li>Esprit critique</li>
-        <li>Adaptabilité</li>
-        <li>Gestion du temps</li>
-    </ul>
+    <table border="1" width="80%">
+        <tr>
+            <td>Prise de décision</td>
+            <td>Travail en équipe</td>
+        </tr>
+        <tr>
+            <td>Esprit critique</td>
+            <td>Adaptabilité</td>
+        </tr>
+        <tr>
+            <td>Gestion du temps</td>
+            <td></td>
+        </tr>
+    </table>
 
     <br>
 
     <!-- Intérêts et Loisirs -->
     <h2>Intérêts et Loisirs</h2>
-    <ul>
-        <li>Gymnastique</li>
-        <li>Musculation</li>
-        <li>Cinéma</li>
-        <li>Boxe</li>
-    </ul>
+    <table border="1" width="80%">
+        <tr>
+            <td>Gymnastique</td>
+            <td>Musculation</td>
+        </tr>
+        <tr>
+            <td>Cinéma</td>
+            <td>Boxe</td>
+        </tr>
+    </table>
 
 </body>
 </html>
