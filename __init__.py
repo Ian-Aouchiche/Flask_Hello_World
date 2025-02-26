@@ -19,7 +19,9 @@ def hello_world():
               <p><a href='/actualite/'>Lien vers l'actualité</a></p>
               <p>Pour accéder à page1 cliquez <a href='/page1/'>Ici</a></p>
               <p>Pour accéder à page2 cliquez <a href='/page2/'>Ici</a></p>
-              <p>Pour accéder à page3 cliquez <a href='/page3/'>Ici</a></p>"""
+              <p>Pour accéder à page3 cliquez <a href='/page3/'>Ici</a></p>
+              <p>Pour accéder à CV cliquez <a href='/CV/'>Ici</a></p>"""
+
 
 
 
@@ -89,6 +91,10 @@ def page2():
 @app.route('/page3/')
 def page3():
     return render_template('TD1_page3.html')
+
+@app.route('/CV/')
+def CV():
+    return render_template('TD1_CV.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
