@@ -16,7 +16,9 @@ def hello_world():
               <p>Pour accéder à la page max de tout cliquez <a href='./max/'>Ici</a></p>
               <p>Pour accéder à la page du cnam cliquez <a href='./cnam/'>Ici</a></p>
               <p>Pour accéder à la page exercice1 cliquez <a href='./exercice_base1/'>Ici</a></p>
-              <p>Pour accéder à la page exercice2 cliquez <a href='./exercice_base2/'>Ici</a></p>"""
+              <p>Pour accéder à la page exercice2 cliquez <a href='./exercice_base2/'>Ici</a></p>
+              <p>Pour accéder à la page exercice3 cliquez <a href='./exercice_base3/'>Ici</a></p>"""
+
 
 
 
@@ -77,6 +79,10 @@ def exercice_base1():
 @app.route('/exercice_base2/')
 def exercice_base2():
     return render_template('exercice_base2.html') 
+
+@app.route('/exercice_base3/')
+def exercice_base3():
+    return render_template('exercice_base3.html') 
 
 
 
