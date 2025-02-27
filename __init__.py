@@ -22,7 +22,9 @@ def hello_world():
               <p>Pour accéder à page3 cliquez <a href='/page3/'>Ici</a></p>
               <p>Pour accéder à CV cliquez <a href='/CV/'>Ici</a></p>
               <p>Pour accéder à maison cliquez <a href='/maison/'>Ici</a></p>
-              <p>Pour accéder à valet cliquez <a href='/valet/'>Ici</a></p>"""
+              <p>Pour accéder à valet cliquez <a href='/valet/'>Ici</a></p>
+              <p>Pour accéder à chenil cliquez <a href='/chenil/'>Ici</a></p>"""
+
 
 
 
@@ -107,6 +109,10 @@ def maison():
 @app.route('/valet/')
 def valet():
     return render_template('valet.html')
+
+@app.route('/chenil/')
+def chenil():
+    return render_template('chenil.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
