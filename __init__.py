@@ -22,7 +22,7 @@ def hello_world():
               <p>Pour accéder à page3 cliquez <a href='/page3/'>Ici</a></p>
               <p>Pour accéder à CV cliquez <a href='/CV/'>Ici</a></p>
               <p>Pour accéder à maison cliquez <a href='/maison/'>Ici</a></p>
-              <p>Pour accéder à maison cliquez <a href='/valet/'>Ici</a></p>"""
+              <p>Pour accéder à valet cliquez <a href='/valet/'>Ici</a></p>"""
 
 
 
