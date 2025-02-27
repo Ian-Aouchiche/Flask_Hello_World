@@ -116,7 +116,7 @@ def chenil():
     return render_template('chenil.html')
 
 @app.route('/carre/')
-def carre():
+def CSS_Carre():
     return render_template('CSS_Carre.html')
 
 if __name__ == "__main__":
