@@ -1,24 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice CSS</title>
     <style>
-        html {background-color: black}
-		#Madiv1{color:white;
-		        background-color: green;
-				position: absolute;
-				left:25px;
-				top:25px;
-				widht:100px;
-				height:100px;
-				}
+        html {
+            background-color: black;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid white;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        .top-left {
+            background-color: green;
+            top: 0;
+            left: 0;
+        }
+        .top-right {
+            background-color: orange;
+            top: 0;
+            right: 0;
+        }
+        .bottom-left {
+            background-color: red;
+            bottom: 0;
+            left: 0;
+        }
+        .bottom-right {
+            background-color: blue;
+            bottom: 0;
+            right: 0;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div id="Madiv1">En haut à gauche</div>
-        <div>En haut à droite</div>
-        <div>En bas à droite</div>
-        <div>En bas à gauche</div>
-    </header>
+    <div class="container">
+        <div class="box top-left">En haut à gauche</div>
+        <div class="box top-right">En haut à droite</div>
+        <div class="box bottom-left">En bas à gauche</div>
+        <div class="box bottom-right">En bas à droite</div>
+    </div>
 </body>
 </html>
