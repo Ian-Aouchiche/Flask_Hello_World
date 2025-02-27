@@ -99,7 +99,7 @@ def CV():
     return render_template('TD1_CV.html')
 
 @app.route('/maison/')
-def CV():
+def maison():
     return render_template('maison.html')
 
 if __name__ == "__main__":

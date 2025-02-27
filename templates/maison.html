@@ -1,15 +1,46 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison dessinée en SVG</title>
 </head>
-
 <body>
+    <svg width="500" height="500">
+        <!-- Soleil -->
+        <circle cx="400" cy="80" r="30" fill="yellow" stroke="black" stroke-width="2"/>
+        <line x1="400" y1="20" x2="400" y2="50" stroke="black" stroke-width="2"/>
+        <line x1="400" y1="110" x2="400" y2="140" stroke="black" stroke-width="2"/>
+        <line x1="360" y1="80" x2="330" y2="80" stroke="black" stroke-width="2"/>
+        <line x1="440" y1="80" x2="470" y2="80" stroke="black" stroke-width="2"/>
+        <line x1="370" y1="50" x2="350" y2="30" stroke="black" stroke-width="2"/>
+        <line x1="430" y1="50" x2="450" y2="30" stroke="black" stroke-width="2"/>
+        <line x1="370" y1="110" x2="350" y2="130" stroke="black" stroke-width="2"/>
+        <line x1="430" y1="110" x2="450" y2="130" stroke="black" stroke-width="2"/>
 
-<svg width="750" height="750" style="background-color:rgba(200,200,200, 0.5)">
-<circle id="foo" style="fill:none; stroke:red; stroke-width:30px;" cx="375" cy="375" r="200" />
-<rect style="fill:green; stroke:blue; stroke-width:30px;" x="230" y="300" width="290" height="150" />
-<polygon style="fill:green; stroke:blue; stroke-width:3px;" points="0 0, 100 100, 0 100"/>
-</svg>
+        <!-- Corps de la maison -->
+        <rect x="150" y="200" width="200" height="200" fill="yellow" stroke="black" stroke-width="2"/>
+        
+        <!-- Toit -->
+        <polygon points="150,200 250,100 350,200" fill="red" stroke="black" stroke-width="2"/>
 
+        <!-- Cheminée -->
+        <rect x="270" y="120" width="20" height="40" fill="red" stroke="black" stroke-width="2"/>
+        <path d="M275,120 C270,110 280,100 275,90 C270,80 280,70 275,60" stroke="black" stroke-width="2" fill="none"/>
+        
+        <!-- Porte -->
+        <rect x="230" y="300" width="50" height="100" fill="brown" stroke="black" stroke-width="2"/>
+        
+        <!-- Fenêtre -->
+        <rect x="180" y="240" width="50" height="50" fill="lightblue" stroke="black" stroke-width="2"/>
+        <line x1="180" y1="265" x2="230" y2="265" stroke="black" stroke-width="2"/>
+        <line x1="205" y1="240" x2="205" y2="290" stroke="black" stroke-width="2"/>
+        
+        <!-- Herbe et fleurs -->
+        <ellipse cx="120" cy="400" rx="30" ry="10" fill="green"/>
+        <ellipse cx="90" cy="400" rx="20" ry="5" fill="green"/>
+        <circle cx="100" cy="390" r="5" fill="red"/>
+        <circle cx="110" cy="390" r="5" fill="yellow"/>
+    </svg>
 </body>
 </html>
