@@ -24,7 +24,9 @@ def hello_world():
               <p>Pour accéder à maison cliquez <a href='/maison/'>Ici</a></p>
               <p>Pour accéder à valet cliquez <a href='/valet/'>Ici</a></p>
               <p>Pour accéder à chenil cliquez <a href='/chenil/'>Ici</a></p>
-              <p>Pour accéder à carre cliquez <a href='/carre/'>Ici</a></p>"""
+              <p>Pour accéder à carre cliquez <a href='/carre/'>Ici</a></p>
+              <p>Pour accéder à carre cliquez <a href='/etoiles/'>Ici</a></p>"""
+
 
 
 
@@ -118,6 +120,10 @@ def chenil():
 @app.route('/carre/')
 def CSS_Carre():
     return render_template('CSS_Carre.html')
+
+@app.route('/etoiles/')
+def Carre_Etoiles():
+    return render_template('Carre_Etoiles.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
