@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Triangle d'étoiles</title>
+    <title>Triangle inversé d'étoiles</title>
     <script>
         function afficher() {
             var saisie = parseInt(document.getElementById('V1').value);
             var resultat = "";	
 
-            for (var i = 1; i >= saisie; i--) {
+            for (var i = saisie; i >= 1; i--) {
                 resultat += "*".repeat(i) + "<br>";
             }
 
@@ -17,7 +17,7 @@
     </script>
 </head>
 <body>
-    <h1>Les étoiles</h1>
+    <h1>Triangle inversé d'étoiles</h1>
     <p>Saisir un chiffre : <input id="V1" type="number"></p>
     <button onclick="afficher()">Afficher</button>
     <div id="result"></div>

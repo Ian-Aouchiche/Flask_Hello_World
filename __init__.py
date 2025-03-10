@@ -25,7 +25,7 @@ def hello_world():
               <p>Pour accéder à valet cliquez <a href='/valet/'>Ici</a></p>
               <p>Pour accéder à chenil cliquez <a href='/chenil/'>Ici</a></p>
               <p>Pour accéder à carre cliquez <a href='/carre/'>Ici</a></p>
-              <p>Pour accéder à carre cliquez <a href='/etoiles/'>Ici</a></p>"""
+              <p>Pour accéder à étoile cliquez <a href='/etoiles/'>Ici</a></p>"""
 
 
 
