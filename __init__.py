@@ -27,7 +27,7 @@ def hello_world():
               <p>Pour accéder à carre cliquez <a href='/carre/'>Ici</a></p>
               <p>Pour accéder à étoile cliquez <a href='/etoiles/'>Ici</a></p>
               <p>Pour accéder à images cliquez <a href='/images/'>Ici</a></p>
-              <p>Pour accéder à Jeu_Des_Base cliquez <a href='/Jeu_Des_Base/'>Ici</a></p>"""
+              <p>Pour accéder à  jeu_des cliquez <a href='/jeu_des/'>Ici</a></p>"""
 
 
 
@@ -131,8 +131,8 @@ def Carre_Etoiles():
 @app.route('/images/')
 def images():
     return render_template('images.html') 
-@app.route('/Jeu_Des_Base/')
-def Jeu_Des_Base():
+@app.route('/jeu_des/')
+def  jeu_des():
     return render_template('Jeu_Des_Base.html')
 
 if __name__ == "__main__":
