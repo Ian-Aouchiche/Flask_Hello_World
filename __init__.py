@@ -133,7 +133,7 @@ def images():
     return render_template('images.html') 
 @app.route('/jeu_des/')
 def  jeu_des():
-    return render_template('Jeu_Des_Base.html')
+    return render_template('jeu_des.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
