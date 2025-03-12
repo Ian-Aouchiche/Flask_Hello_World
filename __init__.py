@@ -131,7 +131,7 @@ def Carre_Etoiles():
 @app.route('/images/')
 def images():
     return render_template('images.html') 
-@app.route('/Jeu_Des_Bases/')
+@app.route('/Jeu_Des_Base/')
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html')
 
