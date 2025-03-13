@@ -11,17 +11,15 @@
             let randomNumber = Math.floor(Math.random() * 6) + 1;
             alert("Le barillet tourne... Chambre: " + randomNumber);
             
-            // Réinitialiser les couleurs
             for (let i = 1; i <= 6; i++) {
                 document.getElementById("Br" + i).style.fill = selectedCylinders.includes("Br" + i) ? "red" : "gray";
             }
             
-            // Marquer la chambre tirée en bleu
             document.getElementById("Br" + randomNumber).style.fill = "blue";
             
             if (selectedCylinders.includes("Br" + randomNumber)) {
                 alert("Vous avez perdu tout vos gains");
-                gains = 0; // Tout est perdu
+                gains = 0; 
                 reset();
             } else {
                 switch (selectedCylinders.length) {
