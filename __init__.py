@@ -27,13 +27,14 @@ def hello_world():
               <p>Pour accéder à carre cliquez <a href='/carre/'>Ici</a></p>
               <p>Pour accéder à étoile cliquez <a href='/etoiles/'>Ici</a></p>
               <p>Pour accéder à images cliquez <a href='/images/'>Ici</a></p>
-              <p>Pour accéder à  jeu_des cliquez <a href='/jeu_des/'>Ici</a></p>"""
+              <p>Pour accéder à  jeu_des cliquez <a href='/jeu_des/'>Ici</a></p>
+              <p>Pour accéder à  roulette_russe cliquez <a href='/roulette_russe/'>Ici</a></p>"""
 
 
 
 
 
-
+ 
 
 
 
@@ -134,6 +135,8 @@ def images():
 @app.route('/jeu_des/')
 def  jeu_des():
     return render_template('jeu_des.html')
-
+@app.route('/roulette_russe /')
+def  roulette_russe():
+    return render_template('roulette_russe.html')
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
