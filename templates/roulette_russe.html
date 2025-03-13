@@ -2,25 +2,44 @@
 <html>
 <head>
     <script>
-        function lancer(){
+        let ballesPlacees = 0;
+        let gains = 0;
+
+        function lancer() {
             let randomNumber = Math.floor(Math.random() * 6) + 1;
             alert("Le barillet tourne... Chambre: " + randomNumber);
             
-            if(document.getElementById("Br" + randomNumber).style.fill == "red") {
+            for (let i = 1; i <= 6; i++) {
+                document.getElementById("Br" + i).style.fill = (document.getElementById("Br" + i).style.fill == "red") ? "red" : "gray";
+            }
+            
+            document.getElementById("Br" + randomNumber).style.fill = "blue";
+            
+            if (document.getElementById("Br" + randomNumber).style.fill == "red") {
                 alert("Perdu");
+                gains = 0; 
             } else {
-                alert("Gagné");
+                if (ballesPlacees == 1) gains += 10000;
+                if (ballesPlacees == 2) gains += 100000;
+                if (ballesPlacees == 3) gains += 1000000;
+                alert("Gagné ! Total gains: " + gains + "€");
             }
         }
 
         function afficherNumero(numero) {
-            alert("Chambre numéro " + numero);
-            document.getElementById("Br" + numero).style.fill = "red";
+            if (ballesPlacees < 3 && document.getElementById("Br" + numero).style.fill != "red") {
+                document.getElementById("Br" + numero).style.fill = "red";
+                ballesPlacees++;
+            } else if (document.getElementById("Br" + numero).style.fill == "red") {
+                document.getElementById("Br" + numero).style.fill = "gray";
+                ballesPlacees--;
+            }
         }
     </script>
 </head>
 <body>
     <h1>Roulette Russe</h1>
+    <p>Gains: <span id="gains">0</span>€</p>
 
     <svg width="200" height="200" style="background-color:antiquewhite">
         <circle cx="100" cy="100" r="95" stroke="black" stroke-width="3" fill="none" />
