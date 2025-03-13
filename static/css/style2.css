@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+svg {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#Br1, #Br2, #Br3, #Br4, #Br5, #Br6 {
+    transition: fill 0.3s ease;
+}
+
+.red {
+    fill: red !important;
+}
+
+.blue {
+    fill: blue !important;
+}

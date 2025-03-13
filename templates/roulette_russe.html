@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="style2.css">
     <script>
         let ballesPlacees = 0;
         let gains = 0;
+        let selectedCylinders = [];
 
         function lancer() {
             let randomNumber = Math.floor(Math.random() * 6) + 1;
             alert("Le barillet tourne... Chambre: " + randomNumber);
             
+            // Réinitialiser les couleurs
             for (let i = 1; i <= 6; i++) {
-                document.getElementById("Br" + i).style.fill = (document.getElementById("Br" + i).style.fill == "red") ? "red" : "gray";
+                document.getElementById("Br" + i).style.fill = selectedCylinders.includes("Br" + i) ? "red" : "gray";
             }
             
+            // Marquer la chambre tirée en bleu
             document.getElementById("Br" + randomNumber).style.fill = "blue";
             
-            if (document.getElementById("Br" + randomNumber).style.fill == "red") {
-                alert("Perdu");
-                gains = 0; 
+            if (selectedCylinders.includes("Br" + randomNumber)) {
+                alert("Vous avez perdu tout vos gains");
+                gains = 0; // Tout est perdu
+                reset();
             } else {
-                if (ballesPlacees == 1) gains += 10000;
-                if (ballesPlacees == 2) gains += 100000;
-                if (ballesPlacees == 3) gains += 1000000;
-                alert("Gagné ! Total gains: " + gains + "€");
+                switch (selectedCylinders.length) {
+                    case 1:
+                        gains += 10000;
+                        break;
+                    case 2:
+                        gains += 100000;
+                        break;
+                    case 3:
+                        gains += 1000000;
+                        break;
+                }
+                alert("Vous avez gagné ! Total gains: " + gains + "€");
+                document.getElementById("gains").innerText = gains;
             }
         }
 
         function afficherNumero(numero) {
-            if (ballesPlacees < 3 && document.getElementById("Br" + numero).style.fill != "red") {
-                document.getElementById("Br" + numero).style.fill = "red";
-                ballesPlacees++;
-            } else if (document.getElementById("Br" + numero).style.fill == "red") {
-                document.getElementById("Br" + numero).style.fill = "gray";
-                ballesPlacees--;
+            let id = "Br" + numero;
+            let cylinder = document.getElementById(id);
+            
+            if (selectedCylinders.length < 3 && !selectedCylinders.includes(id)) {
+                cylinder.style.fill = "red";
+                selectedCylinders.push(id);
+            } else if (selectedCylinders.includes(id)) {
+                cylinder.style.fill = "gray";
+                selectedCylinders = selectedCylinders.filter(c => c !== id);
+            }
+        }
+
+        function reset() {
+            selectedCylinders = [];
+            ballesPlacees = 0;
+            document.getElementById("gains").innerText = "0";
+            for (let i = 1; i <= 6; i++) {
+                document.getElementById("Br" + i).style.fill = "gray";
             }
         }
     </script>
@@ -52,6 +78,7 @@
         <circle cx="100" cy="100" r="10" stroke="black" stroke-width="3" fill="black" />
     </svg>    
 
-    <button onclick="lancer()">Jouer</button>    
+    <button onclick="lancer()">Jouer</button>
+    <button onclick="reset()">Réinitialiser</button>    
 </body>
 </html>
